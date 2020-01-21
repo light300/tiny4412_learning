@@ -1,0 +1,3 @@
+set toolchain
+    # You need to change your dictionary path (toolchain & kernel)
+    source ./set_toolchain.sh
