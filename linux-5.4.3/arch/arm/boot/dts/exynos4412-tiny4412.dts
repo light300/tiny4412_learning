@@ -11,6 +11,7 @@
 /dts-v1/;
 #include "exynos4412.dtsi"
 #include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/input/input.h>
 
 / {
 	model = "FriendlyARM TINY4412 board based on Exynos4412";
@@ -66,6 +67,7 @@
 			clock-frequency = <24000000>;
 		};
 	};
+
 };
 
 &rtc {
@@ -100,4 +102,45 @@
 
 &serial_3 {
 	status = "okay";
+};
+
+&exynos_usbphy {
+        samsung,usb4604-rst = <&gpm2 4 1>;
+        status = "okay";
+};
+
+&hsotg {
+        status = "okay";
+};
+
+&ehci {
+        status = "okay";
+        #address-cells = <1>;
+        #size-cells = <0>;
+        port@0 {
+                reg = <0>;
+                phys = <&exynos_usbphy 1>;
+                status = "okay";
+        };
+        port@1 {
+                reg = <1>;
+                phys = <&exynos_usbphy 2>;
+                status = "okay";
+        };
+        port@2 {
+                reg = <2>;
+                phys = <&exynos_usbphy 3>;
+                status = "okay";
+        };
+};
+
+&ohci {
+        status = "okay";
+        #address-cells = <1>;
+        #size-cells = <0>;
+        port@0 {
+                reg = <0>;
+                phys = <&exynos_usbphy 1>;
+                status = "okay";
+        };
 };
