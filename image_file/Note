@@ -1,0 +1,20 @@
+============bootloader================
+[Host] 
+2. sudo dnw ./tiny4412_learn/image_file/tiny4412_bootloader/bootloader_combin.bin
+4. sudo dnw ./tiny4412_learn/image_file/update_uboot_auto_from_emmc.script
+
+[Target] 
+1. dnw 0xc0000000
+3. dnw 0xd0000000
+5. source 0xd0000000
+
+=========kernel & file system===========
+[Host]
+2. sudo fastboot flash kernel ./zImage_dtb
+4. sudo fastboot flash system ./rootFS/rootfs.ext2
+
+[Target]
+1. fastboot
+3. fastboot
+
+ref: https://slashembeddedlinux.blogspot.com/p/develop-environment-setting-install.html
