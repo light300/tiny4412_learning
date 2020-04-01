@@ -1,0 +1,1 @@
+cmd_/home/cadtc/tiny4412_learning/sample/ch2-2-hello_world/hello.mod := { echo  /home/cadtc/tiny4412_learning/sample/ch2-2-hello_world/hello.o; echo; } > /home/cadtc/tiny4412_learning/sample/ch2-2-hello_world/hello.mod

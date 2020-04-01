@@ -1,0 +1,1 @@
+cmd_/home/cadtc/tiny4412_learning/sample/ch2-2-hello_world/built-in.a := rm -f /home/cadtc/tiny4412_learning/sample/ch2-2-hello_world/built-in.a; arm-linux-gnueabi-ar cDPrST /home/cadtc/tiny4412_learning/sample/ch2-2-hello_world/built-in.a 

@@ -1,0 +1,1 @@
+cmd_/home/cadtc/tiny4412_learning/sample/ch2-2-hello_world/hello.ko := arm-linux-gnueabi-ld -r  -EL  --build-id  -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds -o /home/cadtc/tiny4412_learning/sample/ch2-2-hello_world/hello.ko /home/cadtc/tiny4412_learning/sample/ch2-2-hello_world/hello.o /home/cadtc/tiny4412_learning/sample/ch2-2-hello_world/hello.mod.o;  true
